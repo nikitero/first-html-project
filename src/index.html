@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Project</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/latest/normalize.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header_intro header_font">Discover Riga</div>
+      <div class="header_intro header_font header_menu">
+        <a href="" class="option one">Tours</a>
+        <a class="option two">Precios</a>
+        <a class="option three">Contacto</a>
+      </div>
+      <div class="header_intro header_font">FAQs</div>
+    </header>
+
+    <!-- Nav Bar -->
+    <nav class="navegator">
+      <div class="navegator_left">
+        <a class="navegator_link nav_font" href="">Lugares de interés</a>
+        <a class="navegator_link nav_font" href="">Gastronomía Letona</a>
+        <a class="navegator_link nav_font" href="">Imágenes</a>
+      </div>
+      <div class="navegator_right">
+        <a href="https://www.facebook.es"
+          ><img
+            class="social_image fb"
+            src="./assets/facebook-svgrepo-com.svg"
+            alt=""
+        /></a>
+        <a href="https://www.twitter.es"
+          ><img
+            class="social_image tw"
+            src="./assets/twitter-svgrepo-com.svg"
+            alt=""
+        /></a>
+        <a href="https://www.instagram.es"
+          ><img
+            class="social_image ig"
+            src="./assets/instagram-svgrepo-com.svg"
+            alt=""
+        /></a>
+      </div>
+    </nav>
+
+    <!-- Main-->
+    <main class="main">
+      <!-- First Section - Welcome-->
+      <div class="welcome">
+        <div class="welcome_intro">
+          <h3 class="logo_font">Discover Riga</h3>
+        </div>
+        <div class="welcome_logo">
+          <h3 class="intro_font">Te da la Bienvenida!</h3>
+        </div>
+
+        <!-- Welcome- First box-->
+        <div class="welcome_boxone">
+          <p class="welcome_textone welcome_boxtext">
+            Descubre una ciudad con más de 800 años de historia que te ofrece una gran oferta
+            gastronómica y cultural.
+          </p>
+          <p class="welcome_texttwo welcome_boxtext">
+            ¿Quieres conocer la ciudad?
+          </p>
+          <div class="welcome_form">
+            <form method="get" action="#history">
+              <button type="submit" class="btn btn-outline-light bt_form">
+                Descubrir Historia
+              </button>
+            </form>
+            <form method="get" action="#reservations">
+              <button type="submit" class="btn btn-outline-light bt_form">
+                Reservar Tour
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Welcome- Second box-->
+        <div class="welcome_boxtwo">
+          <div>
+            <img
+              class="rescarousel_image"
+              src="https://www.lavanguardia.com/files/article_main_microformat/uploads/2018/05/04/5fa437120f428.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Section - History-->
+      <div id="history" class="history">
+        <div class="history_intro">Welcome to Riga</div>
+        <div class="history_box history_border">
+          <div class="history_text">
+            <p class="history_p">
+              Riga es la capital y la ciudad más poblada de la República de
+              Letonia
+            </p>
+            <p class="history_p">
+              Fundada en 1201, la ciudad fue miembro de la Liga Hanseática.
+            </p>
+            <p class="history_p">
+              El centro histórico de Riga, declarado Patrimonio de la Humanidad
+              por la Unesco, destaca por su arquitectura Art Nouveau y sus
+              construcciones de madera del siglo xix.​ La ciudad fue designada
+              Capital Europea de la Cultura en 2014.
+            </p>
+            <p class="history_p">
+              La ciudad de Riga ofrece una gran oferta cultural y gastronomica.
+            </p>
+            <p class="history_p">
+              Descubre los tours con Discover Riga y reserva el tuyo
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Section - History-->
+      <div id="reservations" class="reservation">
+        <div class="reservation_intro">
+          <h3 class="intro_font">Reserva tu tour por Riga con</h3>
+        </div>
+        <div class="reservation_logo">
+          <h3 class="logo_font">Discover Riga</h3>
+        </div>
+        <div class="reservation_boxone">
+          <div>
+            <img class="rescarousel_image" src="./assets/riga1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="reservation_boxtwo">
+          <div class="reservation_form">
+            <form action="" method="get">
+              <fieldset>
+                <label class="form_box form_font" for="name">Nombre</label>
+                <input
+                  class="form_box form_input"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
+                <label class="form_box form_font" for="phone"
+                  >Teléfono de Contacto</label
+                >
+                <input
+                  class="form_box form_input"
+                  type="number"
+                  name="surname"
+                  id="surname"
+                />
+                <label class="form_box form_font" for="surname">E-mail</label>
+                <input
+                  class="form_box form_input"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+                <label class="form_box form_font" for="tourtype"
+                  >¿Que tour te gustaría hacer?</label
+                >
+                <select
+                  class="form_box form_input form__dif"
+                  id="tourtype"
+                  name="tourtype"
+                >
+                  <option value="casco">Casco Antiguo</option>
+                  <option value="gastro">Tour Gastronómico</option>
+                  <option value="nocturn">Tour Nocturno</option>
+                  <option value="barco">Tour en el barco</option>
+                </select>
+                <input
+                  class="form_button btn btn-outline-light bt_form"
+                  type="submit"
+                />
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+        <div class="reservation_info">
+          <h4 class="resinfo_font">
+            Envíanos una solicitud y te llamamos en menos de una hora!
+          </h4>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

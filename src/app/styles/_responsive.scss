@@ -1,0 +1,23 @@
+// SCSS Variables
+$layout_bp_tablet: 576px;
+$layout_bp_desktop: 720px;
+
+// SCSS Mixins
+
+@mixin tablet {
+  @media only screen and (min-width: #{$layout_bp_tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: #{$layout_bp_desktop}) {
+    @content;
+  }
+}
+
+@media (max-width:600px) {
+  body {
+    background-color: green;
+  }
+  }
